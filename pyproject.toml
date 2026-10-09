@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-agent"
+version = "1.0.0"
+description = "Create and manage AI agents that help with day-to-day desktop tasks on macOS and Windows."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["anthropic>=0.40", "python-dotenv>=1.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+desktop-agent = "desktop_agent.cli:main"
+
+[tool.setuptools]
+packages = ["desktop_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

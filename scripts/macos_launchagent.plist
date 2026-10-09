@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Starts Desktop Agent automatically when you log in on macOS.
+  1. Replace /PATH/TO/desktop-agent (two places) with the real project folder.
+  2. Replace /PATH/TO/desktop-agent/.venv/bin/python with your Python path (run: which python3).
+  3. Copy to ~/Library/LaunchAgents/com.desktopagent.plist
+  4. Run:  launchctl load ~/Library/LaunchAgents/com.desktopagent.plist
+  To stop:  launchctl unload ~/Library/LaunchAgents/com.desktopagent.plist
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.desktopagent</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/PATH/TO/desktop-agent/.venv/bin/python</string>
+        <string>-m</string>
+        <string>desktop_agent</string>
+        <string>serve</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/PATH/TO/desktop-agent</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/desktop-agent.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/desktop-agent.err</string>
+</dict>
+</plist>
