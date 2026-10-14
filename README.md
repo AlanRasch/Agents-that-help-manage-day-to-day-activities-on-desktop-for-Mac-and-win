@@ -1,20 +1,20 @@
-# 🖥️ Desktop Agent
+# Desktop Agent
 
 **Create and manage small AI helpers that take care of everyday desktop tasks on macOS and Windows.**
 
 Examples of what your agents can do:
 
-- 🗂️ **Tidy Downloads** every evening: sort loose files into *Images*, *Documents*, *Installers*, and so on. It shows you the plan first and never deletes anything.
-- ☀️ **Morning briefing** at 08:30: today's date, free disk space, and your reminders.
-- ⏰ **Reminders** in plain language: `remind me to call Sokha at 15:30`.
-- 🔎 **Find and open files** in your Desktop, Downloads, or Documents folders.
-- 🧠 **Custom agents** that you describe in your own words. With a Claude API key, they plan and use their skills on their own.
+- Tidy Downloads every evening: sort loose files into *Images*, *Documents*, *Installers*, and so on. It shows you the plan first and never deletes anything.
+- Morning briefing at 08:30: today's date, free disk space, and your reminders.
+- Reminders in plain language: `remind me to call Sokha at 15:30`.
+- Find and open files in your Desktop, Downloads, or Documents folders.
+- Custom agents that you describe in your own words. With a Claude API key, they plan and use their skills on their own.
 
-You do not need to write code to use it. The app is driven by a few short commands, and it works **without an API key** using a built-in assistant. Add a key later to unlock Claude-powered agents.
+You do not need to write code to use it. The app is driven by a few short commands, and it works (without an API key) using a built-in assistant. Add a key later to unlock Claude-powered agents.
 
 ---
 
-## Contents
+Contents
 
 1. [Safety first](#safety-first)
 2. [Installation: macOS](#installation-macos)
